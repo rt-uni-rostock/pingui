@@ -1,0 +1,39 @@
+/* This is actually a .qss file but we use .css for better syntax highlighting without any addons */
+
+/* General style for the whole application */
+QMainWindow {
+    background-color: #ffffff;
+}
+
+/* VectorPlot: custom class properties */
+VectorPlot {
+    qproperty-cmdColor: #0066cc;
+    qproperty-actColor: #00cc00;
+    qproperty-backgroundInner: #f7fbfe;
+    qproperty-backgroundRing: #e9eff8;
+    qproperty-rulerOuter: #ffffff;
+    qproperty-rulerInnerDash: #e4e6f2;
+    qproperty-rulerInnerSolid: #d4d9e2;
+    qproperty-borderColor: #cad0d7;
+}
+
+/* RudderPlot: custom class properties */
+RudderPlot {
+    qproperty-cmdColor: #0066cc;
+    qproperty-actColor: #00cc00;
+    qproperty-cmdRef: #8fadcc;
+    qproperty-actRef: #8fcc8f;
+    qproperty-backgroundInner: #f7fbfe;
+    qproperty-backgroundOuter: #e9eff8;
+    qproperty-rulerDash: #e4e6f2;
+    qproperty-rulerSolid: #d4d9e2;
+    qproperty-borderColor: #cad0d7;
+}
+
+/* PushButton: based on QPushButton */
+PushButton {
+    font: medium Ubuntu;
+    font-size: 18px;
+    border-radius: 2px;
+    margin: 2px;
+}

@@ -1,0 +1,21 @@
+__pycache__
+app/memoryLayout.json
+
+# MATLAB/Simulink
+*.asv
+*.m~
+*.autosave
+*.slx.r*
+*.mdl.r*
+*.p
+*.mex*
+*.mlappinstall
+*.mltbx
+*.ctf
+helpsearch*/
+cache/
+*.slxc
+.MATLABDriveTag
+.buildtool/
+*.sbproj.backup
+*.sbproj.bak
