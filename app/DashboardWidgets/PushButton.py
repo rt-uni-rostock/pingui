@@ -47,21 +47,16 @@ class PushButton(QPushButton, DashboardWidget):
         super().mouseReleaseEvent(event)
 
     def __applyStyle(self):
-        if self.__isPressed:
-            darkened_color = self.__baseColor.darker(120)
-            self.setStyleSheet("background-color: " + darkened_color.name() + ";")
-            self.__adjustTextColor()
-        else:
-            self.setStyleSheet("background-color: " + self.__baseColor.name() + ";")
-            self.__adjustTextColor()
-
-    def __adjustTextColor(self):
         # calculate brightness using the luminance formula
         brightness = (0.299 * self.__baseColor.red() +
                       0.587 * self.__baseColor.green() +
                       0.114 * self.__baseColor.blue())
+        str_text_color = "color: black;"
         if brightness < 128:
-            self.setStyleSheet(self.styleSheet() + "color: white;")
+            str_text_color = "color: white;"
+        if self.__isPressed:
+            darkened_color = self.__baseColor.darker(120)
+            self.setStyleSheet("background-color: " + darkened_color.name() + "; " + str_text_color)
         else:
-            self.setStyleSheet(self.styleSheet() + "color: black;")
+            self.setStyleSheet("background-color: " + self.__baseColor.name() + "; " + str_text_color)
 

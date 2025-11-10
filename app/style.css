@@ -37,3 +37,9 @@ PushButton {
     border-radius: 2px;
     margin: 2px;
 }
+
+/* NumericDisplayInt32, NumericDisplayFloat32: based on QLineEdit */
+NumericDisplayInt32 {
+    font: medium Ubuntu;
+    font-size: 18px;
+}

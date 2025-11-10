@@ -60,6 +60,28 @@ The actual format depends on the type and is shown below.
 
 ## Widget Data Specification
 
+### NumericDisplayFloat32
+**Input** (10 bytes)
+
+| Datatype  | Name            | Description                                                    |
+|:--------- |:--------------- |:-------------------------------------------------------------- |
+| float     | value           | The numerical value to be displayed.                           |
+| 3 x uint8 | foregroundColor | Foreground color of the display, given as red, green and blue. |
+| 3 x uint8 | backgroundColor | Background color of the display, given as red, green and blue. |
+
+**Output** (0 bytes)
+
+### NumericDisplayInt32
+**Input** (10 bytes)
+
+| Datatype  | Name            | Description                                                    |
+|:--------- |:--------------- |:-------------------------------------------------------------- |
+| int32     | value           | The numerical value to be displayed.                           |
+| 3 x uint8 | foregroundColor | Foreground color of the display, given as red, green and blue. |
+| 3 x uint8 | backgroundColor | Background color of the display, given as red, green and blue. |
+
+**Output** (0 bytes)
+
 ### PushButton
 **Input** (3 bytes)
 

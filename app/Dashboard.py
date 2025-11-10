@@ -18,6 +18,8 @@ class Dashboard(MainDashboard):
         self.button3 = PushButton("Button 3")
         self.vectorPlot = VectorPlot()
         self.rudderPlot = RudderPlot()
+        self.numericDisplayInt32 = NumericDisplayInt32()
+        self.numericDisplayFloat32 = NumericDisplayFloat32(num_digits=2)
 
 
         # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -33,3 +35,5 @@ class Dashboard(MainDashboard):
         layout.addWidget(self.button3, 2, 0)
         layout.addWidget(self.vectorPlot, 0, 1)
         layout.addWidget(self.rudderPlot, 1, 1)
+        layout.addWidget(self.numericDisplayInt32, 2, 1)
+        layout.addWidget(self.numericDisplayFloat32, 3, 1)
