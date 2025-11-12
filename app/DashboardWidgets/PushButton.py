@@ -14,12 +14,13 @@ class PushButton(QPushButton, DashboardWidget):
 
     # get memory size for input and output data
     def requiredIODatastoreSize(self):
-        return (3, 1)  # input size, output size
+        return (3, 2)  # input size, output size
 
     # serialize output data to bytes
     def packOutput(self):
-        data = bytearray(1)
-        data[0] = self.counter
+        data = bytearray(2)
+        data[0] = self.__isPressed
+        data[1] = self.counter
         return data
 
     # deserialize input data from bytes

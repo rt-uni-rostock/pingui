@@ -89,11 +89,12 @@ The actual format depends on the type and is shown below.
 |:--------- |:----- |:-------------------------------------------------- |
 | 3 x uint8 | color | Color of the button, given as red, green and blue. |
 
-**Output** (1 byte)
+**Output** (2 byte2)
 
-| Datatype | Name    | Description                                                  |
-|:-------- |:------- |:------------------------------------------------------------ |
-| uint8    | counter | Counter that is incremented each time the button is pressed. |
+| Datatype | Name      | Description                                                  |
+|:-------- |:--------- |:------------------------------------------------------------ |
+| uint8    | isPressed | 1 if button is pressed, 0 otherwise.                         |
+| uint8    | counter   | Counter that is incremented each time the button is pressed. |
 
 ### RudderPlot
 **Input** (16 bytes)
