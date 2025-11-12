@@ -1,3 +1,4 @@
+import numpy as np
 import socket
 import struct
 import threading
@@ -39,7 +40,7 @@ class NetworkManager(threading.Thread):
                 break
             if len(data) < 4:
                 continue
-            input_data_index = struct.unpack('!I', data[:4])[0]
+            input_data_index = np.frombuffer(data[0:4], dtype=np.uint32)[0]
             datastore.write_input(input_data_index, data[4:])
         try:
             self._sock.close()
