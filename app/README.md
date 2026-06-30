@@ -6,7 +6,7 @@ To run the application you need to have python3 with PyQt5 installed.
 Install python3 and required modules with the following command.
 
 ```
-sudo apt install python3 python3-pyqt5
+sudo apt install python3 python3-numpy python3-pyqt5
 ```
 
 #### Installation (Windows)
@@ -14,7 +14,7 @@ Download and install python3 from python.org.
 Run the following command to install required modules.
 
 ```
-pip3 install pyqt5
+pip3 install numpy pyqt5
 ```
 
 ## Launch Application
